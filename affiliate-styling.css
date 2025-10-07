@@ -1,8 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+
+
 /* Highlighted text animation */
 .highlighted-text::before {
-  content: '';
+  content: "";
   position: absolute;
-  left: 0; top: 50%;
+  left: 0;
+  top: 50%;
   width: 100%;
   height: 2.2em;
   background: #fcdc3a;
@@ -12,12 +23,13 @@
   animation: highlight-bg 1s linear forwards;
 }
 @keyframes highlight-bg {
-  0% { width: 0; }
-  100% { width: 100%; }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
-
-
-
 
 /* Brands slider styles */
 .brands-slider {
@@ -52,15 +64,6 @@
   filter: grayscale(0%);
 }
 
-/* Rotating image animation */
-.rotate-img {
-  animation: rotate-circle 8s linear infinite;
-}
-@keyframes rotate-circle {
-  0% { transform: rotate(0deg) translateX(-50%); }
-  100% { transform: rotate(360deg) translateX(-50%); }
-}
-
 
 
 /* ===============================
@@ -69,24 +72,112 @@
 
 /* Slow outer rotation */
 @keyframes rotate-slow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Reverse rotation for inner elements */
 @keyframes rotate-reverse {
-  from { transform: rotate(360deg); }
-  to { transform: rotate(0deg); }
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
 /* Apply animation */
 .animate-rotate-slow {
-  animation: rotate-slow 25s linear infinite;
+  animation: rotate-slow 50s linear infinite;
 }
 
-.animate-rotate-reverse {
-  animation: rotate-reverse 25s linear infinite;
+
+.icon-block {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  /*background-image: linear-gradient(180deg, #4967e6 0%, #627bf4 100%);*/
+  /* -webkit-background-image: linear-gradient(360deg, #4967e6 0%, #627bf4 100%); */
 }
+
+.icon-block img {
+  margin: 0px auto;
+  width: 86%;
+  animation: rotate-reverse 50s linear infinite;
+  /* -webkit-animation: rotate-reverse 50s linear infinite; */
+}
+
+.icon-block:first-child {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* -webkit-transform: translate(-50%, -50%); */
+}
+
+.icon-block:nth-child(2) {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  /* -webkit-transform: translate(50%, -50%); */
+}
+
+.icon-block:nth-child(3) {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  /* -webkit-transform: translate(-50%, 50%); */
+}
+
+.icon-block:nth-child(4) {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  /* -webkit-transform: translate(-50%, -50%); */
+}
+
+.icon-block:nth-child(5) {
+  top: 15%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  /* -webkit-transform: translate(-50%, -50%); */
+}
+
+.icon-block:nth-child(6) {
+  top: 15%;
+  right: 58%;
+  transform: translate(-50%, -50%);
+  /* -webkit-transform: translate(-50%, -50%); */
+}
+
+.icon-block:nth-child(7) {
+  top: 85%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+  /* -webkit-transform: translate(-50%, -50%); */
+}
+
+.icon-block:nth-child(8) {
+  top: 85%;
+  right: 58%;
+  transform: translate(-50%, -50%);
+  /* -webkit-transform: translate(-50%, -50%); */
+}
+
 /* ===============================
    End of circle images rotate reverse Animation Styles
+   =============================== */
+
+/* ===============================
+   Dash-Dash SVG Background Section Styling
    =============================== */
