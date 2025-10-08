@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Affiliate Marketing Agency</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+
+
     <!-- ✅ AOS (Animate On Scroll) CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="affiliate-styling.css">
@@ -19,15 +22,15 @@
             <!-- Left -->
             <div class="flex-1 flex justify-center">
                <div class="flex flex-col items-start">
-                 <h1 class="text-4xl font-bold mb-4">
+                 <h1 class="text-[3rem] leading-[1.5] font-bold mb-4 ">
                     Industry Leading <br>
                     <span class="text-yellow-500">Affiliate Marketing Agency</span>
                 </h1>
-                <h2 class="text-3xl font-bold mb-2">
+                <h2 class="text-[3rem] leading-[1.5] font-bold mb-4 ">
                     Grow Your <span class="relative inline-block highlighted-text"><span
                             id="animated-word"></span></span>
                 </h2>
-                <p class="text-lg mb-4">Affiliate Network Integration</p>
+                <p class="text-[3rem] font-semibold mb-4">Affiliate Network Integration</p>
                 <button class="bg-yellow-400 text-black px-6 py-2 rounded font-semibold mb-8">Brief Your
                     Project</button>
                </div>
@@ -147,7 +150,12 @@
                     Your Project</button>
             </div>
             <!-- Rotating Awards Circle -->
-<div class="flex-1 flex items-center justify-center">
+<div class="flex-1  flex items-center justify-center">
+
+    <!-- Add this inside your .flex-1 container, before the .relative div -->
+<div class="absolute inset-0 w-full h-full z-0 pointer-events-none">
+  <img src="./images/heading-full-city.png" alt="" class="w-full h-full object-cover opacity-[0.5]" />
+</div>
   <div class="relative w-[350px] sm:w-[420px] md:w-[480px] h-[350px] sm:h-[420px] md:h-[480px]">
     
     <!-- Rotating Circle -->
@@ -240,7 +248,8 @@
                 <!-- Step 1 -->
                 <div class="flex flex-col md:flex-row items-center gap-8 my-12">
                     <div class="flex-1">
-                        <h4 class="text-3xl font-bold mb-2">Affiliate Marketing Strategy / Plan</h4>
+                        <div class="flex">
+                            <h4 class="text-3xl font-bold mb-2">Affiliate Marketing Strategy / Plan</h4>
                         <p class="text-gray-600 text-[1.3rem]  mb-4">
                             We are a team of passionate affiliate marketers led by Rifat Ahmed (our CEO) with over 12+
                             years of experience in the Affiliate Marketing Agency business.
@@ -259,6 +268,7 @@
                         <p class="text-gray-600 text-[1.3rem]">
                             Our method is proven, tailored toward quality.
                         </p>
+                        </div>
                     </div>
                     <div class="flex-1 flex justify-center">
                         <img src="./images/unsplash.jpg" alt="unsplash"
@@ -272,14 +282,14 @@
 
     <!-- Services Steps Section -->
     <section class="py-16 bg-white">
-        <div class="w-[1340px] mx-auto">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">5 Steps Of A Winning Affiliate Campaign</h2>
+        <div class="w-[1340px] mx-auto my-[4rem]">
+            <h2 class="text-3xl md:text-[3rem] font-bold text-center mb-12">5 Steps Of A Winning Affiliate Campaign</h2>
             <div class="grid md:grid-cols-1 gap-12">
                 <div class="grid md:grid-cols-1 gap-12">
                     <!-- Step 1 -->
-                    <div class="flex flex-col md:flex-row items-center gap-8 mb-12">
+                    <div class="flex flex-col md:flex-row items-center gap-8 my-12">
                         <div class="flex-1">
-                            <h4 class="text-2xl font-bold mb-2">Affiliate Marketing Strategy / Plan</h4>
+                            <h4 class="text-4xl font-bold mb-2">Affiliate Marketing Strategy / Plan</h4>
                             <p class="text-gray-600 text-base mb-4">
                                 We create a custom affiliate strategy for your brand, focused on ROI and growth.
                             </p>
@@ -296,7 +306,7 @@
                         </div>
                     </div>
                     <!-- Step 2 -->
-                    <div class="flex flex-col md:flex-row items-center gap-8 mb-12">
+                    <div class="flex flex-col md:flex-row items-center gap-8 my-12">
 
                         <div class="flex-1 flex justify-center">
                             <img src="./images/affiliate_recruited.png" alt="Affiliate Tracking Software"
@@ -304,7 +314,7 @@
                         </div>
 
                         <div class="flex-1">
-                            <h4 class="text-2xl font-bold mb-2">Affiliate Tracking Software</h4>
+                            <h4 class="text-4xl font-bold mb-2">Affiliate Tracking Software</h4>
                             <p class="text-gray-600 text-base mb-4">
                                 Track every click, lead, and sale with our advanced affiliate tracking solutions.
                             </p>
@@ -316,9 +326,9 @@
                         </div>
                     </div>
                     <!-- Step 3 -->
-                    <div class="flex flex-col md:flex-row items-center gap-8 mb-12">
+                    <div class="flex flex-col md:flex-row items-center gap-8 my-12">
                         <div class="flex-1">
-                            <h4 class="text-2xl font-bold mb-2">Affiliate Recruitment</h4>
+                            <h4 class="text-4xl font-bold mb-2">Affiliate Recruitment</h4>
                             <p class="text-gray-600 text-base mb-4">
                                 We recruit top-performing affiliates to maximize your campaign reach.
                             </p>
@@ -333,13 +343,13 @@
                         </div>
                     </div>
                     <!-- Step 4 -->
-                    <div class="flex flex-col md:flex-row items-center gap-8 mb-12">
+                    <div class="flex flex-col md:flex-row items-center gap-8 my-12">
                         <div class="flex-1 flex justify-center">
                             <img src="./images/manager.png" alt="Affiliate Management"
                                 class="rounded-lg shadow-lg w-full max-w-md object-cover">
                         </div>
                         <div class="flex-1">
-                            <h4 class="text-2xl font-bold mb-2">Affiliate Manager / Management</h4>
+                            <h4 class="text-4xl font-bold mb-2">Affiliate Manager / Management</h4>
                             <p class="text-gray-600 text-base mb-4">
                                 Our managers ensure your program runs smoothly and delivers results.
                             </p>
@@ -350,9 +360,9 @@
                         </div>
                     </div>
                     <!-- Step 5 -->
-                    <div class="flex flex-col md:flex-row items-center gap-8 mb-12">
+                    <div class="flex flex-col md:flex-row items-center gap-8 my-12">
                         <div class="flex-1">
-                            <h4 class="text-2xl font-bold mb-2">Affiliate Payroll</h4>
+                            <h4 class="text-4xl font-bold mb-2">Affiliate Payroll</h4>
                             <p class="text-gray-600 text-base mb-4">
                                 Automated, accurate affiliate payments for hassle-free management.
                             </p>
@@ -371,78 +381,250 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-bold text-center mb-8">Clients Love Us</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded shadow">
-                    <p class="text-gray-700 italic">"Amazing support and results! Highly recommended."</p>
-                    <span class="block mt-4 font-semibold text-gray-900">Fanoodle</span>
-                </div>
-                <div class="bg-white p-6 rounded shadow">
-                    <p class="text-gray-700 italic">"Helped us scale our affiliate program fast."</p>
-                    <span class="block mt-4 font-semibold text-gray-900">Amplixin</span>
-                </div>
-                <div class="bg-white p-6 rounded shadow">
-                    <p class="text-gray-700 italic">"Best agency for B2B affiliate marketing."</p>
-                    <span class="block mt-4 font-semibold text-gray-900">Tileclub</span>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4 text-center w-[1340px]">
+    <h2 class="text-3xl font-bold mb-10 text-gray-800">What Our Clients Say</h2>
 
-    <!-- Success Stories Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-bold text-center mb-8">Our Success Stories</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-100 p-6 rounded shadow">
-                    <h4 class="font-bold mb-2">800% Growth of ScraperAPI Affiliate Program in Six months.</h4>
-                    <p class="text-gray-700 mb-4">MonsterClaw helped ScraperAPI achieve massive growth with a custom
-                        affiliate strategy.</p>
-                    <button class="bg-yellow-400 text-black px-4 py-2 rounded font-semibold">Read Story</button>
-                </div>
-                <div class="bg-gray-100 p-6 rounded shadow flex flex-col justify-center items-center">
-                    <img src="./images/success-story.png" class="w-32 h-32 mb-4" alt="Success Story">
-                    <span class="font-semibold text-gray-900">Platinum, Amplixin, Tileclub</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Slider Wrapper -->
+    <div class="relative overflow-hidden testimonial-wrapper">
+      <div id="testimonial-slider"
+        class="flex justify-center transition-transform duration-500 ease-in-out"></div>
 
-    <!-- Contact / Brief Project Section -->
-    <section class="relative py-16 bg-white">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-bold text-center mb-8">Brief Your Project With Confidence</h2>
-            <form class="max-w-xl mx-auto bg-gray-50 p-8 rounded shadow">
-                <input type="text" placeholder="Your Name" class="w-full mb-4 p-3 rounded border border-gray-300">
-                <input type="email" placeholder="Your Email" class="w-full mb-4 p-3 rounded border border-gray-300">
-                <textarea placeholder="Project Details"
-                    class="w-full mb-4 p-3 rounded border border-gray-300"></textarea>
-                <button type="submit"
-                    class="bg-yellow-400 text-black px-6 py-2 rounded font-semibold w-full">Submit</button>
-            </form>
-        </div>
-        <!-- Triangle BG at bottom -->
-        <div class="triangle-bg absolute bottom-0 right-0 w-[70vw] h-[40vh]"></div>
-    </section>
+      <!-- Dots -->
+      <div id="testimonial-dots" class="flex justify-center mt-8 gap-2"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 1: One-Stop Solution -->
+<section class="py-16">
+  <div class="max-w-[1340px] mx-auto flex flex-col md:flex-row items-center gap-12 px-4">
+    <!-- Left Image -->
+    <div class="flex-1 flex justify-center">
+      <img src="./images/Affiliate Dashboard.png" alt="Affiliate Dashboard" class="w-full max-w-md rounded-xl shadow" />
+      <!-- Add the cat image as needed, position absolute if required -->
+      <!-- <img src="./images/cat.png" alt="Cat" class="absolute bottom-0 right-0 w-20" /> -->
+    </div>
+    <!-- Right Content -->
+    <div class="flex-1">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Your One-Stop, Headache-Free Solution for Affiliate</h2>
+      <p class="text-gray-700 text-base">
+        Starting from affiliate setup to tracking the performance of marketers, MonsterClaw has it all. Our fully equipped team of affiliate managers, recruiters, and marketers will take your campaign to new heights.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Profitable & Scalable Channel -->
+<section class="py-8">
+  <div class="max-w-[1340px] mx-auto bg-gray-50 rounded-2xl flex flex-col md:flex-row items-center gap-8 px-8 py-10 shadow">
+    <!-- Left Content -->
+    <div class="flex-1">
+      <h3 class="text-2xl md:text-3xl font-bold mb-4">We Can Make Your Affiliate Marketing Channel Profitable and Scalable.</h3>
+      <p class="text-gray-700 mb-4">
+        The straight approach to affiliate marketing is ensuring a stable affiliate marketing campaign, that grows every month, and is in positive ROI.
+      </p>
+      <p class="text-gray-700 mb-6">
+        We have perfected our affiliate marketing campaign launch and management method after hundreds of trials and errors, and now we are confident that if we take your project – it’s going to rock.
+      </p>
+      <button class="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-2 rounded font-semibold flex items-center gap-2 transition">
+        Brief Your Project
+        <span class="ml-2">&rarr;</span>
+      </button>
+    </div>
+    <!-- Right GIF/Image -->
+    <div class="flex-1 flex justify-center">
+      <img src="./images/brief-project.gif" alt="Brief Project GIF" class="w-[260px] rounded shadow" />
+    </div>
+  </div>
+</section>
+
+
+<!-- Section: Not Sure How To Get Started -->
+<section class="py-10">
+  <div class="max-w-[1340px] mx-auto bg-white rounded-xl shadow border p-8 flex flex-col md:flex-row items-center gap-8">
+    <!-- Left Content -->
+    <div class="flex-1">
+      <h2 class="text-2xl md:text-3xl font-bold mb-2">NOT SURE HOW TO GET STARTED?</h2>
+      <p class="text-gray-700 mb-6 text-sm md:text-base">
+        Talk to one of our expert consultants to understand where you’re at your business and how you can implement or scale your affiliate marketing program.
+      </p>
+      <button class="bg-yellow-400 hover:bg-yellow-500 text-black px-5 py-2 rounded font-semibold text-sm transition">
+        Book A Free Consultation
+      </button>
+    </div>
+    <!-- Right Illustration -->
+    <div class="flex-1 flex justify-center">
+      <img src="./images/Consulting-bro.svg" alt="Consult Illustration" class="max-w-[260px] w-full" />
+    </div>
+  </div>
+</section>
+
+<!-- Section: Success Stories -->
+<section class="py-10">
+  <div class="max-w-[1340px] mx-auto bg-gray-50 rounded-xl shadow border p-8 flex flex-col md:flex-row items-center gap-8">
+    <!-- Left Content -->
+    <div class="flex-1">
+      <h2 class="text-3xl font-bold mb-6 text-center md:text-left">Our Success Stories</h2>
+      <h3 class="text-xl md:text-4xl font-bold mb-2">800% Growth of ScraperAPI Affiliate Program in Six months.</h3>
+      <p class="text-gray-700 mb-6 text-sm md:text-base">
+        Overview: ScraperAPI is a B2B SaaS tool for programmers. It’s a Proxy API for Web Scraping and it can turn any website into API, and solves the captcha, re-captcha for faster scraping. Python programmers are the main user of this software.
+      </p>
+      <button class="bg-yellow-400 hover:bg-yellow-500 text-black px-5 py-2 rounded font-semibold text-sm flex items-center gap-2 transition">
+        Read Full Case Study
+        <span class="ml-2">&rarr;</span>
+      </button>
+    </div>
+    <!-- Right Image -->
+    <div class="flex-1 flex justify-center">
+      <img src="./images/ScraperAPI-1.png" alt="ScraperAPI Case" class="max-w-[320px] w-full rounded" />
+    </div>
+  </div>
+</section>
+
+<section class="relative py-16 overflow-hidden">
+  <!-- ✅ SVG Background -->
+  <div class="absolute h-full pointer-events-none z-0">
+    <img src="./images/vector-42.svg" alt="" class="w-full h-full " />
+  </div>
+
+  <!-- ✅ Main Content -->
+  <div class="relative z-10 max-w-[1340px] mx-auto flex flex-col md:flex-row items-center px-4">
+    <!-- Left Illustration -->
+    <div class="flex-1 flex justify-center items-center min-w-[320px]">
+      <img src="./images/review-illustration.png" alt="Review Illustration" class="w-full max-w-[480px]" />
+    </div>
+
+    <!-- Right Content -->
+    <div class="flex-1 flex flex-col justify-center items-start md:pl-12 mt-8 md:mt-0 text-gray-900">
+      <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">
+        We Are Top 1% At Most Of<br>
+        The Freelance Marketplaces<br>
+        And 90% Of Clients Are<br>
+        Enterprise Level
+      </h2>
+      <div class="w-40 h-1 bg-yellow-400 rounded"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="relative py-20 overflow-hidden">
+  <!-- Angled SVG Background -->
+  <div class="absolute inset-0 w-full h-full pointer-events-none z-0">
+    <img src="./images/Group-4378.svg" alt="" class="w-full h-full object-cover" style="opacity:0.9;" />
+  </div>
+  <div class="relative z-10 max-w-[900px] mx-auto px-4">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">Brief Your Project With Confidence</h2>
+    <p class="text-lg text-center text-gray-700 mb-10">Brief your project, and we’ll get back to you ASAP.</p>
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <label class="block text-gray-700 mb-1">First Name<span class="text-red-500">*</span></label>
+        <input type="text" class="w-full bg-gray-50 border rounded px-4 py-2" required>
+      </div>
+      <div>
+        <label class="block text-gray-700 mb-1">Last Name</label>
+        <input type="text" class="w-full bg-gray-50 border rounded px-4 py-2">
+      </div>
+      <div>
+        <label class="block text-gray-700 mb-1">Website URL<span class="text-red-500">*</span></label>
+        <input type="url" class="w-full bg-gray-50 border rounded px-4 py-2" required>
+      </div>
+      <div>
+        <label class="block text-gray-700 mb-1">Job Title</label>
+        <input type="text" class="w-full bg-gray-50 border rounded px-4 py-2">
+      </div>
+      <div>
+        <label class="block text-gray-700 mb-1">Work Email<span class="text-red-500">*</span></label>
+        <input type="email" class="w-full bg-gray-50 border rounded px-4 py-2" required>
+      </div>
+      <div>
+        <label class="block text-gray-700 mb-1">Phone Number<span class="text-red-500">*</span></label>
+        <input type="tel" class="w-full bg-gray-50 border rounded px-4 py-2" required>
+      </div>
+      <div class="md:col-span-2">
+        <label class="block text-gray-700 mb-1">What Is Your Budget?<span class="text-red-500">*</span></label>
+        <select class="w-full bg-gray-50 border rounded px-4 py-2" required>
+          <option>Please Select</option>
+          <option>Less than $1,000</option>
+          <option>$1,000 - $5,000</option>
+          <option>$5,000 - $10,000</option>
+          <option>More than $10,000</option>
+        </select>
+      </div>
+      <div class="md:col-span-2">
+        <label class="block text-gray-700 mb-1">How can we help you?<span class="text-red-500">*</span></label>
+        <textarea class="w-full bg-gray-50 border rounded px-4 py-2" rows="3" required></textarea>
+      </div>
+      <div class="md:col-span-2">
+        <!-- reCAPTCHA placeholder -->
+        <div class="g-recaptcha" data-sitekey="your-site-key-here"></div>
+      </div>
+      <div class="md:col-span-2 flex justify-start">
+        <button type="submit" class="bg-orange-400 hover:bg-orange-500 text-white px-8 py-2 rounded font-semibold transition">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-8">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-4 md:mb-0">
-                <img src="./images/monsterclaw-logo.png" class="h-10" alt="MonsterClaw Logo">
-            </div>
-            <div class="flex gap-8">
-                <a href="#" class="hover:text-yellow-400">Home</a>
-                <a href="#" class="hover:text-yellow-400">Services</a>
-                <a href="#" class="hover:text-yellow-400">Contact</a>
-            </div>
-            <div class="mt-4 md:mt-0 text-sm">
-                &copy; 2025 MonsterClaw LLC. All rights reserved.
-            </div>
-        </div>
-    </footer>
+<footer class="bg-black text-white pt-12 pb-4">
+  <div class="max-w-[1340px] mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+    <!-- Logo -->
+    <div class="flex justify-center md:justify-start mb-8 md:mb-0">
+      <img src="./images/MonsterClaw-M-Logo.png" alt="MonsterClaw Logo" class="w-[180px] h-[180px] object-contain bg-yellow-400 rounded" />
+    </div>
+    <!-- Resources -->
+    <div>
+      <h3 class="text-yellow-400 font-bold text-lg mb-3">Resources</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Blog</a></li>
+        <li><a href="#" class="hover:underline">Case Studies</a></li>
+        <li><a href="#" class="hover:underline">Free eBooks</a></li>
+        <li><a href="https://monsterclaw.com/clickbank/" class="hover:underline">ClickBank Account</a></li>
+      </ul>
+    </div>
+    <!-- Company -->
+    <div>
+      <h3 class="text-yellow-400 font-bold text-lg mb-3">Company</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">About</a></li>
+        <li><a href="#" class="hover:underline">Consultation</a></li>
+        <li><a href="#" class="hover:underline">Contact Us</a></li>
+        <li><a href="#" class="hover:underline">Career</a></li>
+      </ul>
+    </div>
+    <!-- Subscribe & Social -->
+    <div>
+      <h3 class="text-yellow-400 font-bold text-lg mb-3">Subscribe for important updates &amp; news.</h3>
+      <form class="flex mb-3">
+        <input type="email" placeholder="Enter Your Email" class="flex-1 px-4 py-2 rounded-l bg-white text-black focus:outline-none" />
+        <button type="submit" class="bg-yellow-400 px-6 rounded-r flex items-center justify-center">
+          <span class="text-2xl text-black">&rarr;</span>
+        </button>
+      </form>
+      <p class="mb-2">We are very active and regular on social media. Follow us on our social media for regular updates, tips, etc.</p>
+      <div class="font-bold mb-2">LET’S GET SOCIAL <span class="ml-1">👇</span></div>
+      <div class="flex gap-2">
+        <a href="#" class="bg-[#0077b5] p-2 rounded"><img src="./images/linkedin.svg" alt="LinkedIn" class="w-6 h-6" /></a>
+        <a href="#" class="bg-[#3b5998] p-2 rounded"><img src="./images/facebook.svg" alt="Facebook" class="w-6 h-6" /></a>
+        <a href="#" class="bg-[#ff0000] p-2 rounded"><img src="./images/youtube.svg" alt="YouTube" class="w-6 h-6" /></a>
+        <a href="#" class="bg-[#1da1f2] p-2 rounded"><img src="./images/twitter.svg" alt="Twitter" class="w-6 h-6" /></a>
+      </div>
+    </div>
+  </div>
+  <hr class="border-gray-400 my-8" />
+  <div class="max-w-[1340px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm">
+    <div class="mb-2 md:mb-0">
+      Copyright © 2025 MonsterClaw LLC. All Rights Reserved.
+    </div>
+    <div class="flex gap-6">
+      <a href="#" class="hover:underline">Privacy</a>
+      <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+      <a href="#" class="hover:underline">Refund Policy</a>
+    </div>
+  </div>
+</footer>
 
     <script src="./affiliate.js"></script>
 </body>
